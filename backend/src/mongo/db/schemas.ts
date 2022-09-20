@@ -6,7 +6,6 @@ export class ActionData {
     @Prop({
         type: Number,
         enum: ActionEnum,
-        default: ActionEnum.UNKNOWN,
         required: true
     })
     action!: ActionEnum;

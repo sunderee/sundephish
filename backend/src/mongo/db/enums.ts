@@ -13,8 +13,7 @@ export enum ActionEnum {
     OPEN_BROWSER,
     CLICK_SIGN_UP,
     CLICK_FORGOT_PASSWORD,
-    SUBMITTED_CREDENTIALS,
-    UNKNOWN
+    SUBMITTED_CREDENTIALS
 }
 
 export const actionToSeverity = (action: ActionEnum): SeverityEnum =>
@@ -23,7 +22,6 @@ export const actionToSeverity = (action: ActionEnum): SeverityEnum =>
 const actionToSeverityMap: Record<number, SeverityEnum> = {
     0: SeverityEnum.LOW,
     1: SeverityEnum.LOW,
-    2: SeverityEnum.LOW,
-    3: SeverityEnum.MEDIUM,
-    4: SeverityEnum.HIGH
+    2: SeverityEnum.MEDIUM,
+    3: SeverityEnum.HIGH
 };

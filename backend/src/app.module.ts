@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { CollectModule } from './collect/collect.module';
 import { MongoModule } from './mongo/mongo.module';
 import { SubmitModule } from './submit/submit.module';
-import { CollectModule } from './collect/collect.module';
 
 @Module({
     imports: [
@@ -13,7 +13,7 @@ import { CollectModule } from './collect/collect.module';
             inject: [ConfigService],
             useFactory: (configService: ConfigService) => ({
                 uri:
-                    configService.get<string>('MONGO_DB_URL') ||
+                    configService.get<string>('MONGO_URL') ||
                     'mongodb://localhost/development'
             })
         }),

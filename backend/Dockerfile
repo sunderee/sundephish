@@ -24,6 +24,7 @@ RUN rm -rf /var/cache/apk/*
 
 # Copy everything we need
 WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app/.env ./.env
 COPY --from=builder /usr/src/app/dist ./dist
 COPY --from=builder /usr/src/app/node_modules ./node_modules
 
