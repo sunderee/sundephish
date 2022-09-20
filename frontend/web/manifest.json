@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Full-stack phishing framework built with MFN² stack",
+    "description": "Nest.js-based backend for SundePhish",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

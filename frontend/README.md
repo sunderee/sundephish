@@ -1,16 +1,23 @@
-# sundephish
+# SundePhish Frontend
 
-Full-stack phishing framework built with MFN² stack
+Flutter-based backend for SundePhish.
 
-## Getting Started
+# Usage
 
-This project is a starting point for a Flutter application.
+This is a Flutter project, so make sure you have the latest stable version installed. Next, install dependencies and run the app
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+# Install dependencies
+flutter pub get
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Run the app
+flutter run --dart-define=URL=XXX
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You need to provide `URL` via `--dart-define` because that will be used as a base hostname where your backend is hosted/running from.
+
+For example, if you deployed your backend to `https://awesome-domain.com/`, then you need to run the app with `--dart-define=URL=awesome-domain.com`
+
+## License
+
+Project is open-sourced under the MIT license.

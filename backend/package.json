@@ -1,6 +1,6 @@
 {
     "name": "sundephish-backend",
-    "description": "Backend powering the SundePhish suite",
+    "description": "Nest.js-based backend for SundePhish",
     "version": "0.0.1",
     "author": {
         "name": "Peter Aleksander Bizjak",

@@ -1,5 +1,5 @@
 name: sundephish
-description: Full-stack phishing framework built with MFN² stack
+description: Flutter-based backend for SundePhish
 
 publish_to: "none"
 version: 0.0.1+1
@@ -10,6 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # Architecture & networking
+  get_it: ^7.2.0
+  http: ^0.13.5
+
+  # Utilities
+  meta: ^1.8.0
 
 dev_dependencies:
   flutter_lints: ^2.0.1
