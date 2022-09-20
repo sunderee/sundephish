@@ -1,6 +1,6 @@
 {
-    "name": "sundephish",
-    "short_name": "sundephish",
+    "name": "SundePhish Phishing Framework",
+    "short_name": "SundePhish",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
