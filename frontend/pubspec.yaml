@@ -16,6 +16,7 @@ dependencies:
   http: ^0.13.5
 
   # Utilities
+  flutter_svg: ^1.1.5
   meta: ^1.8.0
 
 dev_dependencies:
@@ -24,5 +25,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_icons:
+  web:
+    generate: true
+    image_path: assets/facebook.png
+    background_color: "#EFF3F7"
+    theme_color: "#156EE6"
+
 flutter:
   uses-material-design: true
+  assets:
+    - assets/facebook.png
