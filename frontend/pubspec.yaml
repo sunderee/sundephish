@@ -1,0 +1,38 @@
+name: sundephish
+description: Flutter-based backend for SundePhish
+
+publish_to: "none"
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.18.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Architecture & networking
+  get_it: ^7.2.0
+  http: ^0.13.5
+
+  # Utilities
+  flutter_svg: ^1.1.5
+  meta: ^1.8.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.10.0
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  web:
+    generate: true
+    image_path: assets/facebook.png
+    background_color: "#EFF3F7"
+    theme_color: "#156EE6"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/facebook.png
