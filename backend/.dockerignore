@@ -1,0 +1,9 @@
+# IDEs
+.idea
+.vscode
+
+# Node.js
+node_modules
+
+# Output
+dist
