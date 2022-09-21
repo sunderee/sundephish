@@ -10,13 +10,16 @@ This is a Flutter project, so make sure you have the latest stable version insta
 # Install dependencies
 flutter pub get
 
-# Run the app
-flutter run --dart-define=URL=XXX
+# Run or build the app
+flutter run --dart-define=ID=XXX --dart-define=URL=YYY
+flutter build web \
+    --release \
+    --web-renderer=canvaskit \
+    --dart-define=ID=XXX \
+    --dart-define=URL=YYY
 ```
 
-You need to provide `URL` via `--dart-define` because that will be used as a base hostname where your backend is hosted/running from.
-
-For example, if you deployed your backend to `https://awesome-domain.com/`, then you need to run the app with `--dart-define=URL=awesome-domain.com`
+Here, `ID` denotes the group ID. Choose a random string between 1 and 20 characters long. `URL` is the hostname of your deployed backend. For example, if you deployed your backend to `https://awesome-domain.com/`, then you need to run the app with `--dart-define=URL=awesome-domain.com`.
 
 ## License
 

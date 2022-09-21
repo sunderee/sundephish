@@ -1,6 +1,6 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:sundephish/core/api/api.provider.dart';
+import 'package:sundephish/core/api/request.model.dart';
 import 'package:sundephish/core/di.dart';
 import 'package:sundephish/providers/facebook/facebook.screen.dart';
 import 'package:sundephish/providers/facebook/facebook.theme.dart';
@@ -16,11 +16,7 @@ class _AppState extends State<App> {
   @override
   void initState() {
     super.initState();
-
-    configureDependencies(
-      Uri.tryParse(window.location.href)?.queryParameters['id'] ?? 'test',
-    );
-    // getIt.get<IApiProvider>().submit(ActionEnum.openBrowser);
+    getIt.get<IApiProvider>().submit(ActionEnum.openBrowser);
   }
 
   @override

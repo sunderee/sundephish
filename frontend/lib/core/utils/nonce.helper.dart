@@ -3,7 +3,7 @@ import 'dart:math';
 final _secure = Random.secure();
 
 String generateNonce() {
-  final characterCodes = List<int>.generate(16, (_) {
+  final characterCodes = List<int>.generate(8, (_) {
     switch (_secure.nextInt(3)) {
       case 0:
         return _secure.nextInt(10) + 48;
