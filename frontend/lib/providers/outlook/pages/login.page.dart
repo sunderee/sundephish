@@ -71,12 +71,14 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 64.0),
           ],
         ),
         Align(
           alignment: Alignment.bottomRight,
-          child: OutlookButton(onPressed: onNextPage),
+          child: OutlookButton(
+            text: 'Sign in',
+            onPressed: onNextPage,
+          ),
         ),
       ],
     );

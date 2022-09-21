@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sundephish/providers/outlook/pages/login.page.dart';
+import 'package:sundephish/providers/outlook/pages/password.page.dart';
 
 class OutlookScreen extends StatefulWidget {
   const OutlookScreen({super.key});
@@ -32,8 +33,13 @@ class _OutlookScreenState extends State<OutlookScreen> {
                 physics: const NeverScrollableScrollPhysics(),
                 children: [
                   LoginPage(
-                    onNextPage: () {},
+                    onNextPage: () => _pageController.animateToPage(
+                      1,
+                      duration: const Duration(milliseconds: 150),
+                      curve: Curves.ease,
+                    ),
                   ),
+                  const PasswordPage(),
                 ],
               ),
             ),
