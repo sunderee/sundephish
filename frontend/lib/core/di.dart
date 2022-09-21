@@ -5,7 +5,7 @@ final GetIt getIt = GetIt.instance;
 
 void configureDependencies() {
   final provider = ApiProvider(
-    groupID: const String.fromEnvironment('ID'),
+    groupID: const String.fromEnvironment('ID', defaultValue: 'test'),
     baseHostname: const String.fromEnvironment('URL'),
   );
   getIt.registerSingleton<IApiProvider>(provider);
