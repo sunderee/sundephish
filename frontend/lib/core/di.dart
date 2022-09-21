@@ -3,10 +3,13 @@ import 'package:sundephish/core/api/api.provider.dart';
 
 final GetIt getIt = GetIt.instance;
 
-void configureDependencies(String groupID) {
+void configureDependencies() {
   final provider = ApiProvider(
-    groupID: groupID,
-    baseHostname: const String.fromEnvironment('URL'),
+    groupID: const String.fromEnvironment('ID', defaultValue: 'test'),
+    baseHostname: const String.fromEnvironment(
+      'URL',
+      defaultValue: 'localhost:3000',
+    ),
   );
   getIt.registerSingleton<IApiProvider>(provider);
 }

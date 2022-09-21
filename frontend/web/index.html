@@ -17,6 +17,7 @@
 
   <title>SundePhish</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="static/index.css">
 
   <script>
     var serviceWorkerVersion = null;
@@ -25,6 +26,15 @@
 </head>
 
 <body>
+  <div id="preloader" class="container">
+    <div class="lds-ellipsis">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p>Loading, please be patient...</p>
+  </div>
+
   <script>
     window.addEventListener('load', function (ev) {
       _flutter.loader.loadEntrypoint({
@@ -34,6 +44,7 @@
       }).then(function (engineInitializer) {
         return engineInitializer.initializeEngine();
       }).then(function (appRunner) {
+        document.getElementById("preloader").remove();
         return appRunner.runApp();
       });
     });

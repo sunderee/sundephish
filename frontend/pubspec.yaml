@@ -16,6 +16,8 @@ dependencies:
   http: ^0.13.5
 
   # Utilities
+  flutter_web_plugins:
+    sdk: flutter
   flutter_svg: ^1.1.5
   meta: ^1.8.0
 
@@ -25,14 +27,27 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+# Icon generator for Facebook
+# flutter_icons:
+#   web:
+#     generate: true
+#     image_path: assets/facebook.png
+#     background_color: "#EFF3F7"
+#     theme_color: "#156EE6"
+
+# Icon generator for Outlook
 flutter_icons:
   web:
     generate: true
-    image_path: assets/facebook.png
-    background_color: "#EFF3F7"
-    theme_color: "#156EE6"
+    image_path: assets/microsoft.png
+    background_color: "#E1E2DD"
+    theme_color: "#0167B7"
 
 flutter:
   uses-material-design: true
+
+  # Tip: comment/uncomment assets based on which campaign
+  # you are running. Minimizes the final build a little :)
   assets:
     - assets/facebook.png
+    - assets/microsoft.png
