@@ -1,6 +1,6 @@
 # SundePhish Frontend
 
-Flutter-based backend for SundePhish.
+Flutter-based frontend for SundePhish.
 
 # Usage
 

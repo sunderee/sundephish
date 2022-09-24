@@ -1,5 +1,5 @@
 name: sundephish
-description: Flutter-based backend for SundePhish
+description: Flutter-based frontend for SundePhish
 
 publish_to: "none"
 version: 0.0.1+1
