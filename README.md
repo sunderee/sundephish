@@ -18,6 +18,14 @@ SundePhish is a custom social engineering toolit for simulating phishing attacks
 
 For detailed usage, please consult the documentations found in `backend` and `frontend` respectively.
 
+## Contributing
+
+More providers are planned to be added in the future. If you're interested in contributing, please raise an issue first, and remember the following:
+
+1. I am intentionally making sure that provider clone is **not** 100% perfect -> that means you shouldn't pick exactly the same colors, maybe don't include an element or two, etc.
+2. Try not to introduce new actions or functionalities to the backend
+3. Keep the frontend code as small as possible, do not add any new packages
+
 ## License
 
 Project is open-sourced under the MIT license.
